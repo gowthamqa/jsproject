@@ -21,8 +21,37 @@
         <div class="flex-box-container-1">
             <div id="flex-box-result"></div>
         </div>
-        
     </div>
+
+    <div class="container-rps">
+        <h2>Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://images.newscientist.com/wp-content/uploads/2018/08/13151726/g6w88c.jpg?width=800" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="paper" src="https://www.sccpre.cat/mypng/full/11-116053_cliparts-free-download-clip-art-carwad-net-.png" height="150" width="150" alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="https://mpng.pngfly.com/20180203/tfe/kisspng-scissors-cartoon-clip-art-hair-shears-clipart-5a75c57b7e0cb8.1228946915176677075163.jpg" height="150" width="150" alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class="container-change-colors">
+        <h2 id="change-color">Change the color of all buttons</h2>
+        <div class="flex-box-change-colors">
+            <form action="">
+                <select name="select-color" id="select-color" onchange="changeColor(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Woo!</button>
+            <button class="btn btn-danger">Google!</button>
+            <button class="btn btn-warning">Yahoo!</button>
+            <button class="btn btn-success">Facebook!</button>
+
+        </div>
+
+    </div>
+
     <script src="static/js/home.js"></script>
     
 </body>
